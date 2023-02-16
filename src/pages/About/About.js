@@ -28,7 +28,7 @@ const About = () => {
           idx={12}
         />
         </h2>
-        <p>Hi Everyone, I am Rashad Farhadzada from Azerbaijan. With a passion for technology and a strong drive to learn, I'm a developer with a passion for creating stunning, user-friendly websites and web applications. Having almost 1 year of experience in web development including technologies like HTML5, CSS3, BootStrap, Sass, JavaScript, React, C#, .Net, Git. I have a strong desire to collaborate and work as a team, bringing my creative ideas and problem-solving skills to the table.</p>
+        <p>Hi Everyone, I am Rashad Farhadzada from Azerbaijan. With a passion for technology and a strong drive to learn, I'm a developer who likes to create stunning, user-friendly websites and web applications. Got an experience of almost 1 year in web development including technologies like HTML5, CSS3, BootStrap, Sass, JavaScript, React, C#, .Net, Git. I have a strong desire to collaborate and work as a team, bringing my creative ideas and problem-solving skills to the table.</p>
       </div>
       <div className='container-cube'>
         <div className="scene">

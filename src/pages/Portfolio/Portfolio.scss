@@ -119,6 +119,11 @@
         justify-content: center;
     }
     .portfolio-cards-item{
-        width: 280px !important;
+        width: 295px !important;
+    }
+    .card-container-img{
+        img{
+            height: 175px!important;
+        }
     }
   }
