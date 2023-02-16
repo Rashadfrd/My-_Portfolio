@@ -1,0 +1,124 @@
+.portfolio{
+    min-height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 25px;
+    background-color: #111721;
+    .container{
+        font-family: 'Raleway', sans-serif !important;
+        width: 90%;
+        height: 90%;
+        color: white;
+        .title-portfolio{
+            animation: fadeIn 1s 1s backwards;
+            border-bottom: 1px solid white;
+        }
+        .desc-portfolio{
+            font-size: 17px;
+            animation: fadeIn 1s 1.2s backwards;
+        }
+        .portfolio-cards{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            animation: bounceIn 1s 1.4s backwards;
+            &-item{
+                width: calc(100% / 3 - 30px);
+                padding: 15px 15px;
+                .card-container{
+                    text-align: center;
+                    border-radius: 10px;
+                    position: relative;
+                    overflow: hidden;
+                    &:hover .overlay{
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: flex-start;
+                        flex-direction: column;
+                    }
+                    &:hover img{
+                        transition: .7s;
+                        transform: scale(1.2);
+                    }
+                    &-img{
+                        overflow: hidden;
+                        border-radius: 10px;
+                    }
+                    .overlay{
+                        text-align: start;
+                        width: 100%;
+                        height: 90%;
+                        background-color: rgba($color: #000000, $alpha: 0.9);
+                        position: absolute;
+                        top: 0;
+                        display: none;
+                        animation: fadeIn .7s;
+                        animation-fill-mode: forwards;
+                        padding: 20px 10px;
+                        font-size: 16px;
+                        .githubLink-btn{
+                            padding: 10px;
+                            border-radius: 10px;
+                            border: 1px solid white;
+                            &:hover{
+                                background-color:#2d3d58;
+                                border: none;
+                            }
+                        }
+                    }
+                    .project-status{
+                        font-size: 13px;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        border-top-right-radius: 10px;
+                        color: white;
+                        background-color: rgba($color: #026517, $alpha: .6);
+                        padding: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.project-techs{
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+.project-name{
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+.project-status-active{
+    z-index: 5;
+    display: inline;
+}
+.project-status-deactive{
+    display: none;
+}
+
+  @media only screen and (max-width: 1245px) {
+    .portfolio-cards-item{
+        width: calc(100% / 2 - 30px) !important;
+    }
+  }
+  @media only screen and (max-width: 880px) {
+    .portfolio-cards{
+        justify-content: center;
+    }
+    .portfolio-cards-item{
+        width: 450px !important;
+    }
+  }
+  @media only screen and (max-width: 519px) {
+    .portfolio-cards{
+        justify-content: center;
+    }
+    .portfolio-cards-item{
+        width: 280px !important;
+    }
+  }

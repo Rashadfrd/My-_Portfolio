@@ -1,0 +1,74 @@
+header{
+    background-color: #111721;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 0 25px;
+    position: sticky;
+    top:0;
+    z-index: 10;
+}
+.logo{
+    font-size: 25px;
+}
+.active{
+    border-bottom: 1px solid white;
+    color: white !important;
+}
+.link{
+    text-decoration: none;
+    margin: 0 7px;
+    color: #ababab;
+    cursor: pointer;
+    transition: .3s;
+    &:hover{
+        color: white;
+        border-bottom: 1px solid white;
+    }
+}
+.container{
+    font-family: "arial";
+    font-size: 24px;
+    display: grid;
+    place-items: center;
+    width: 90px;
+  }
+  
+  .typed {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid;
+    width: 0;
+    animation: typing 5s steps(30, end) forwards infinite, blinking 1s infinite;
+  }
+    
+  .menu-btn{
+    display: none;
+    cursor: pointer;
+  }
+
+  @media only screen and (max-width: 850px) {
+    .menu-btn{
+      display: block;
+    }
+    nav{
+      display: none;
+    }
+  }
+
+  @keyframes typing {
+    0% { width: 0 }
+    20% { width: 0 }
+    40% { width: 0 }
+    50% { width: 100% }
+    100% { width: 100% }
+  }
+  
+  @keyframes blinking {
+    0% {border-color: transparent}
+    50% {border-color: rgb(255, 255, 255)}
+    100% {border-color: transparent}
+  }
+  

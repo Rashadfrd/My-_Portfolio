@@ -1,0 +1,72 @@
+.home{
+    min-height: calc(100vh - 200px);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 25px;
+    background-color: #111721;
+    position: relative;
+    flex-wrap: wrap;
+    .pageText{
+        color:white;
+        width: calc(100%/12*5);
+        h1{
+            margin: 0;
+            padding: 0;
+            font-size: 55px;
+            animation: fadeIn 1s .5s backwards;
+        }
+        p{
+            animation: fadeIn 1s 2.7s backwards;
+            font-size: 19px;
+            letter-spacing: 3px;
+        }
+        .portfolioBtn{
+            width: 80px;
+            text-decoration: none;
+            border: none;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 5px;
+            background: rgb(116,152,255);
+            background: linear-gradient(90deg, rgba(116,152,255,1) 14%, rgba(87,94,248,1) 61%, rgba(47,55,255,1) 100%);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            font-size: 17px;
+            animation: fadeIn 1s 1.8s backwards;
+
+            &:hover .arrow{
+                transform: translateY(-2px) rotate(90deg);
+            }
+            .arrow{
+                padding: 0;
+                margin: 0;
+                transition: .3s;
+                padding: 0 0 0 7px;
+            }
+        }
+    }
+    .hero{
+        width: calc(100%/12*5);
+        position: relative;
+        animation: fadeIn 1s 1.8s backwards;
+    }
+}
+
+@media only screen and (max-width: 1044px) {
+    .pageText,.hero{
+        width: 80% !important;
+    }
+    .home{
+        padding: 14% 0 0 0;
+        .pageText{
+            h1{
+                font-size: 55px !important;
+            }
+            p{
+                width: 60%;
+            }
+        }
+    }
+}

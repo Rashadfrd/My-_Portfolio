@@ -1,0 +1,53 @@
+.footer{
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+    background-color: #111721;
+}
+.card {
+    width: 210px;
+    height: 40px;
+    border-radius: 4px;
+    display: flex;
+    gap: 5px;
+    padding: .4em;
+  }
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  .card p {
+    height: 100%;
+    flex: 1;
+    overflow: hidden;
+    border-radius: 2px;
+    transition: all .5s;
+    background: transparent;
+    border: 1px solid rgba($color: #00536a, $alpha: 1.0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card p:hover {
+    flex: 4;
+  }
+  .card p:hover a{
+    color: #00536a;
+  }
+.contacts{
+    width: 220px;
+    &-item{
+        margin: 8px;
+    }
+}  @media only screen and (max-width: 698px) {
+    .contacts,.developer,.copyright{
+        width: 100%;
+        margin: 10px;
+        text-align: center;
+    }
+
+  }

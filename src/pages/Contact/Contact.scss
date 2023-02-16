@@ -1,0 +1,125 @@
+.contact{
+    min-height: calc(100vh - 100px);
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0 25px;
+    background-color: #111721;
+    color: white;
+    overflow-x: hidden;
+    .form-contact{
+        text-align: center;
+        width: 45%;
+        animation: fadeIn 1s .5s backwards;
+        form{
+            animation: fadeIn 1s 1s backwards;
+        }
+    }
+    .contact-map{
+        position: relative;
+        width: 45%;
+        height: 500px;
+        &-info{
+            opacity: 0;
+            animation: backInRight 1s 1.2s;
+            animation-fill-mode: forwards;
+            border-radius: 5px;
+            padding: 20px;
+            background-color: rgba($color: #000000, $alpha: 0.8);
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 2;
+        }
+    }
+    .formSubmitBtn{
+        border: none;
+        color: white;
+        padding: 10px 25px;
+        border-radius: 5px;
+        background: rgb(116,152,255);
+        background: linear-gradient(90deg, rgba(116,152,255,1) 14%, rgba(87,94,248,1) 61%, rgba(47,55,255,1) 100%);
+        cursor: pointer;
+        font-size: 17px;
+        transition: .02s;
+        &:hover{
+            transform: scale(.980);
+        }
+    }
+}
+.title-contact{
+    font-size:35px;
+    margin: 0;
+    padding: 0; 
+    border-bottom: 1px solid white;
+    display: inline;
+}
+form{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input[type="email"]{
+    padding: 0 10px;
+    width:450px;
+    height: 40px;
+    font-size: 16px;
+    margin:4px 0 4px 0;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+}
+input[type="text"]{
+    padding: 0 7px;
+    height: 40px;
+    width:216px;
+    font-size: 16px;
+    margin:4px 4px 4px 4px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+}
+textarea{
+    padding: 5px 10px;
+    font-size: 16px;
+    margin: 4px 0 4px 0;
+    height: 180px;
+    width: 450px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+}
+.leaflet-container{
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    animation: backInRight 1s 1.2s;
+    animation-fill-mode: forwards;
+}
+
+@media only screen and (max-width: 1050px) {
+    .form-contact,.contact-map{
+        width: 100% !important;
+    }
+}
+@media only screen and (max-width: 500px) {
+    input[type="email"]{
+        width:250px;
+        height: 40px;
+    }
+    input[type="text"]{
+        height: 40px;
+        width:117px;
+    }
+    textarea{
+        height: 180px;
+        width: 250px;
+    }
+}
