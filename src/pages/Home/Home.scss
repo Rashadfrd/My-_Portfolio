@@ -70,3 +70,21 @@
         }
     }
 }
+@media only screen and (max-width: 528px) {
+    .home{
+        .pageText{
+            h1{
+                font-size: 46px !important;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 440px) {
+    .home{
+        .pageText{
+            h1{
+                font-size: 32px !important;
+            }
+        }
+    }
+}

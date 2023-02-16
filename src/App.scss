@@ -8,13 +8,6 @@
   main{
     font-family: 'Raleway', sans-serif !important;
   }
-.loader{
-    position: fixed;
-    top: 50%;
-    left: 47%;
-    animation: fadeOut .5s .5s;
-    animation-fill-mode: forwards;
-}
 ::-webkit-scrollbar {
     width: 4px;
     height: 4px;
@@ -48,3 +41,31 @@
   ::-webkit-scrollbar-corner {
     background: transparent;
   }
+  .loader{
+    position: fixed;
+    top: 50%;
+    left: 47%;
+    animation: fadeOut .5s .5s;
+    animation-fill-mode: forwards;
+}
+
+@media only screen and (max-width: 911px) {
+  .loader{
+    left: 45%;
+  }
+}
+@media only screen and (max-width: 722px) {
+  .loader{
+    left: 43%;
+  }
+}
+@media only screen and (max-width: 505px) {
+  .loader{
+    left: 41%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .loader{
+    left: 37%;
+  }
+}
