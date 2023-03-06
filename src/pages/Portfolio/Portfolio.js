@@ -6,6 +6,7 @@ import LoremIpsum from '../../assets/LoremIpsum.png'
 import Riode from '../../assets/Riode.png'
 import PortfolioImg from '../../assets/Portfolio.png'
 import StudentManagement from '../../assets/StudentManagement.png'
+import Birbank from '../../assets/birBankApp.png'
 import { useState,useEffect } from 'react'
 import AnimatedLetters from '../../components/AnimatedLetters/AnimatedLetters'
 import Loader from 'react-loaders'
@@ -25,7 +26,7 @@ const Portfolio = () => {
             url:'https://github.com/Rashadfrd/React_ECommerce',
             src:Ecommerce,
             status:false,
-            techs:['React','React Context','Firebase']
+            techs:['React','React Router','React Context','Firebase']
         },
         {
             id:6,
@@ -36,20 +37,28 @@ const Portfolio = () => {
             techs:['React','React Router','Leaflet']
         },
         {
-            id:2,
-            name:'React_Sentence_Generator',
-            url:'https://github.com/Rashadfrd/Sentence_Generator',
-            src:LoremIpsum,
-            status:true,
-            techs:['React']
-        },
-        {
             id:3,
             name:'Student_Management_System',
             url:'https://github.com/Rashadfrd/Asp.Net_StudentManagementSystem',
             src:StudentManagement,
             status:true,
             techs:['JavaScript','Jquery','Asp.Net_MVC','SQL']
+        },
+        {
+          id:7,
+          name:'React_Native_Birbank_Clone',
+          url:'https://github.com/Rashadfrd/ReactNative_BirBank_UIClone',
+          src:Birbank,
+          status:true,
+          techs:['React Native','React Navigation']
+        },
+        {
+          id:2,
+          name:'React_Sentence_Generator',
+          url:'https://github.com/Rashadfrd/Sentence_Generator',
+          src:LoremIpsum,
+          status:true,
+          techs:['React']
         },
         {
             id:4,
