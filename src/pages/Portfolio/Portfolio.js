@@ -7,6 +7,7 @@ import Riode from '../../assets/Riode.png'
 import PortfolioImg from '../../assets/Portfolio.png'
 import StudentManagement from '../../assets/StudentManagement.png'
 import Birbank from '../../assets/birBankApp.png'
+import MovieHeaven from '../../assets/shazam.png'
 import { useState,useEffect } from 'react'
 import AnimatedLetters from '../../components/AnimatedLetters/AnimatedLetters'
 import Loader from 'react-loaders'
@@ -20,6 +21,14 @@ const Portfolio = () => {
      }, 4000)
    }, [])
      const projects = [
+      {
+        id:8,
+        name:'Nextjs_MovieHeaven',
+        url:'https://github.com/Rashadfrd/Nextjs_MovieHeaven',
+        src:MovieHeaven,
+        status:true,
+        techs:['NextJs13']
+      },
         {
             id:1,
             name:'React_E-Commerce',
