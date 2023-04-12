@@ -61,10 +61,11 @@
                         .githubLink-btn{
                             padding: 10px;
                             border-radius: 10px;
+                            transition: .3s;
                             border: 1px solid white;
                             &:hover{
+                                border: 1px solid #2d3d58;
                                 background-color:#2d3d58;
-                                border: none;
                             }
                         }
                     }

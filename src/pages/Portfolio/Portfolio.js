@@ -25,9 +25,10 @@ const Portfolio = () => {
         id:8,
         name:'Nextjs_MovieHeaven',
         url:'https://github.com/Rashadfrd/Nextjs_MovieHeaven',
+        live:'https://nextjs-movieheaven.vercel.app/',
         src:MovieHeaven,
         status:true,
-        techs:['NextJs13']
+        techs:['NextJs13', 'MongoDb','NextAuth']
       },
         {
             id:1,
@@ -35,7 +36,7 @@ const Portfolio = () => {
             url:'https://github.com/Rashadfrd/React_ECommerce',
             src:Ecommerce,
             status:false,
-            techs:['React','React Router','React Context','Firebase']
+            techs:['React','React Router','Firebase']
         },
         {
             id:6,
@@ -108,7 +109,10 @@ const Portfolio = () => {
                         :  <span className='project-status project-status-active'>Ongoing</span>}
                         <div className='overlay'>
                             <span className='project-name'>{project.name}</span>
-                            <a className='githubLink-btn' rel='noreferrer' target='_blank' href={project.url}>Code</a>
+                            <div style={{display:'flex', gap:'5px'}}>
+                              <a className='githubLink-btn' rel='noreferrer' target='_blank' href={project.url}>Code</a>
+                              {project.live && <a className='githubLink-btn' rel='noreferrer' target='_blank' href={project.live}>Live</a> }
+                            </div>
                             <div>
                                 {project.techs.map((tech, index)=>{
                                     return  <span key={index} className='project-techs'>{tech}</span>
