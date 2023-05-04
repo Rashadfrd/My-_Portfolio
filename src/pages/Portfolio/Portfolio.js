@@ -8,6 +8,7 @@ import PortfolioImg from '../../assets/Portfolio.png'
 import StudentManagement from '../../assets/StudentManagement.png'
 import Birbank from '../../assets/birBankApp.png'
 import MovieHeaven from '../../assets/shazam.png'
+import QuizPlosion from '../../assets/quizplosion.png'
 import { useState,useEffect } from 'react'
 import AnimatedLetters from '../../components/AnimatedLetters/AnimatedLetters'
 import Loader from 'react-loaders'
@@ -22,6 +23,14 @@ const Portfolio = () => {
    }, [])
      const projects = [
       {
+        id:9,
+        name:'React_Native_QuizPlosion',
+        url:'https://github.com/Rashadfrd/React_Native_Quizplosion',
+        src:QuizPlosion,
+        status:true,
+        techs:['React Native', 'React Navigation']
+      },
+      {
         id:8,
         name:'Nextjs_MovieHeaven',
         url:'https://github.com/Rashadfrd/Nextjs_MovieHeaven',
@@ -35,7 +44,7 @@ const Portfolio = () => {
             name:'React_E-Commerce',
             url:'https://github.com/Rashadfrd/React_ECommerce',
             src:Ecommerce,
-            status:false,
+            status:true,
             techs:['React','React Router','Firebase']
         },
         {
