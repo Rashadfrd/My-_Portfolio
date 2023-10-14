@@ -49,6 +49,26 @@ header{
     cursor: pointer;
   }
 
+  .cv-download{
+    background-color: transparent;
+    border: none;
+    padding: 3px 10px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    gap: 5px;
+
+    &:hover{
+      background-color: white;
+      color: black;
+    }
+  }
+
   @media only screen and (max-width: 850px) {
     .menu-btn{
       display: block;
